@@ -1,2 +1,2 @@
-# byteful.github.io
-byteful website
+# bytefull.github.io
+bytefull website
