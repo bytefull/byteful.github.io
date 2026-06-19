@@ -1,2 +1,3 @@
-# bytefull.github.io
-bytefull website
+# Bytefull website
+
+Github pages repo for bytefull website
