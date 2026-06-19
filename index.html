@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tapify by Bytefull — Offline-First NFC Access Control</title>
+    <title>Tapify by Bytefull — Contactless NFC Access Control</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -396,32 +396,6 @@
             line-height: 1.65;
         }
 
-        /* ── STATUS ── */
-        .status-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 12px;
-            margin-top: 48px;
-        }
-
-        .status-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 16px 20px;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            font-size: 0.9rem;
-        }
-
-        .status-icon {
-            font-size: 1rem;
-            flex-shrink: 0;
-        }
-
-        .status-item.done { border-color: rgba(0,229,160,0.15); }
-        .status-item.wip  { border-color: rgba(41,121,255,0.15); }
 
         /* ── CONTACT ── */
         .contact-section { background: var(--surface); }
@@ -614,7 +588,6 @@
         <div class="nav-links">
             <a href="#how">How it works</a>
             <a href="#why">Why Tapify</a>
-            <a href="#status">Status</a>
             <a href="#contact" class="nav-cta">Get in touch</a>
         </div>
     </div>
@@ -626,7 +599,7 @@
     <div class="container">
         <div class="badge">
             <span class="badge-dot"></span>
-            Building in Public · Pilot Program Open
+            Pilot Program Open · London
         </div>
         <h1>
             <span class="by">by Bytefull</span>
@@ -640,7 +613,7 @@
         </div>
         <p class="hero-tagline">
             Tapify any door, gate, or turnstile.<br>
-            Offline-first NFC access control — no fobs, no cloud dependency, no cloneable credentials.
+            Fully contactless, offline-first NFC access control — no fobs, no cloud dependency, no cloneable credentials.
         </p>
         <div class="hero-buttons" style="margin-top: 36px;">
             <a href="#contact" class="btn btn-primary">
@@ -696,6 +669,11 @@
         <p class="section-sub">Most access control systems were designed for a world of key cards and cloud servers. Tapify wasn't.</p>
         <div class="why-grid">
             <div class="why-card">
+                <div class="why-card-icon">✋</div>
+                <h4>Fully contactless</h4>
+                <p>No physical cards, no fobs to hand out, no pins to remember. Members use the phone already in their pocket — just tap and walk through.</p>
+            </div>
+            <div class="why-card">
                 <div class="why-card-icon">📡</div>
                 <h4>Offline-first</h4>
                 <p>Access decisions happen on the device. No internet, no cloud subscription, no single point of failure. The door opens even if your WiFi goes down.</p>
@@ -729,48 +707,7 @@
     </div>
 </section>
 
-<!-- STATUS -->
-<section id="status">
-    <div class="container">
-        <div class="section-label">Current status</div>
-        <div class="section-title">What's built, what's next</div>
-        <p class="section-sub">Tapify is being built in public. Here's where things stand today.</p>
-        <div class="status-grid">
-            <div class="status-item done">
-                <span class="status-icon">✅</span>
-                NFC authentication prototype
-            </div>
-            <div class="status-item done">
-                <span class="status-icon">✅</span>
-                Android application
-            </div>
-            <div class="status-item done">
-                <span class="status-icon">✅</span>
-                Zephyr RTOS firmware
-            </div>
-            <div class="status-item done">
-                <span class="status-icon">✅</span>
-                Native simulation support
-            </div>
-            <div class="status-item done">
-                <span class="status-icon">✅</span>
-                CI / Software-in-the-Loop testing
-            </div>
-            <div class="status-item wip">
-                <span class="status-icon">🔄</span>
-                Android Keystore integration
-            </div>
-            <div class="status-item wip">
-                <span class="status-icon">🔄</span>
-                Admin dashboard (embedded)
-            </div>
-            <div class="status-item wip">
-                <span class="status-icon">🚧</span>
-                Pilot deployments — London
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- CONTACT -->
 <section id="contact" class="contact-section">
@@ -780,7 +717,7 @@
         <div class="contact-inner">
             <div class="contact-info">
                 <p>We're looking for 2–3 spaces in London to run a free pilot — gyms, makerspaces, co-working spaces. We install, we support, no commitment.</p>
-                <p>Or just reach out if you have questions, feedback, or want to follow the build.</p>
+                <p>Or just reach out if you have questions or want to learn more about Tapify.</p>
                 <div class="contact-detail">
                     <span>✉️</span>
                     <a href="mailto:hello@bytefull.io">hello@bytefull.io</a>
@@ -840,7 +777,7 @@
 <footer>
     <div class="container">
         <div class="footer-brand"><span>Tapify</span> by Bytefull</div>
-        <p>© 2026 Bytefull · Built in Public · London, UK</p>
+        <p>© 2026 Bytefull · London, UK</p>
         <a href="https://github.com/bytefull" target="_blank">GitHub</a>
     </div>
 </footer>
